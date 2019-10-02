@@ -1,0 +1,48 @@
+@color_1: white;
+@color_2: #7CCBFF;
+@font_family_1: Arial;
+@background_color_1: #F5F5F5;
+@background_color_2: #297FB8;
+@background_color_3: #3598DB;
+
+/*HEADER DEBUT*/
+body {
+	font-family: @font_family_1;
+	background-color: @background_color_1;
+}
+#titre_site {
+	background-color: @background_color_2;
+	width: 100%;
+	h1 {
+		color: @color_1;
+		font-size: 25px;
+		padding: 2%;
+	}
+}
+nav {
+	background-color: @background_color_3;
+	overflow: hidden;
+	li {
+		a {
+			float: left;
+			display: block;
+			color: @color_2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+			border-bottom: 3px solid transparent;
+			transition: color 0.2s, border-bottom 0.2s;
+			&:hover {
+				border-bottom: 3px solid white;
+				color: @color_1;
+				transition: color 0.2s, border-bottom 0.5s;
+			}
+		}
+		margin-left: 1%;
+		a.active {
+			border-bottom: 3px solid white;
+			color: @color_1;
+		}
+	}
+}

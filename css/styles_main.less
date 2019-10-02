@@ -1,0 +1,91 @@
+@color_1: #82CFDB;
+@color_2: #32BED3;
+@background_color_1: white;
+
+/*MAIN DEBUT*/
+/*MAIN FIN*/
+main {
+	display: flex;
+	flex-direction: column;
+	margin-top: 1.5%;
+}
+section {
+	background-color: @background_color_1;
+	box-shadow: 1px 1px 10px #C3C2BE;
+	width: 50%;
+	align-self: center;
+	margin-bottom: 2%;
+	h2 {
+		padding: 2% 0% 2% 5%;
+	}
+	.desc {
+		width: 100%;
+		position: relative;
+	}
+	&:first-child {
+		p {
+			padding: 2% 0% 2% 5%;
+			font-size: 13px;
+		}
+	}
+	&:nth-child(2) {
+		p {
+			padding: 2% 0% 2% 5%;
+			font-size: 13px;
+		}
+		display: flex;
+		a {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			font-size: 22px;
+			padding: 2% 2% 2% 2%;
+			text-decoration: none;
+			color: @color_1;
+			&:hover {
+				transition: color 1s;
+				color: @color_2;
+			}
+		}
+	}
+	&:nth-child(3) {
+		p {
+			padding: 2% 0% 2% 5%;
+			font-size: 13px;
+		}
+		display: flex;
+		a {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			font-size: 22px;
+			padding: 2% 2% 2% 2%;
+			text-decoration: none;
+			color: @color_1;
+			&:hover {
+				transition: color 1s;
+				color: @color_2;
+			}
+		}
+	}
+	&:nth-child(4) {
+		p {
+			padding: 2% 0% 2% 5%;
+			font-size: 13px;
+		}
+		display: flex;
+		a {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			font-size: 22px;
+			padding: 2% 2% 2% 2%;
+			text-decoration: none;
+			color: @color_1;
+			&:hover {
+				transition: color 1s;
+				color: @color_2;
+			}
+		}
+	}
+}
